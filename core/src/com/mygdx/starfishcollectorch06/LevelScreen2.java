@@ -25,6 +25,8 @@ public class LevelScreen2 extends BaseScreen {
     private Music oceanSurf;
 
     public void initialize() {
+        camera.setToOrtho(false, 800, 600);
+
         BaseActor ocean = new BaseActor(0, 0, mainStage);
         ocean.loadTexture("water-border.jpg");
         ocean.setSize(1200, 900);

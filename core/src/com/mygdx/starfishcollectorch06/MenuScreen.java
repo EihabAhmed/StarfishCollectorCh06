@@ -8,6 +8,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 
 public class MenuScreen extends BaseScreen {
     public void initialize() {
+        camera.setToOrtho(false, 800, 600);
+
         BaseActor ocean = new BaseActor(0, 0, mainStage);
         ocean.loadTexture("water.jpg");
         ocean.setSize(800, 600);
